@@ -25,12 +25,28 @@
 
     .header {
         background-color: white;
+        height: 60px;
+        max-height: 60px;
+        display: flex;
+        min-width: 500px;
     }
 
     .logo {
-        margin: 5px;
+        padding: 5px 0;
         zoom: 80%;
-        display: inline;
+        margin: 0;
+        display: inline-block;
+    }
+
+    .logo_text {
+        margin-top: 15px;
+        margin-left: 8px;
+        font-weight: bold;
+    }
+
+    .lang {
+        margin-right: 10px;
+        margin-top: 20px;
     }
 
     </style>
@@ -40,8 +56,13 @@
     <div class="container">
         <div class="header">
             <div>
-            <img class="logo" src="images/huawei_logo.png">
-            
+                <img class="logo" src="images/huawei_logo.png">
+            </div>
+            <div style="display: flex; width: 100px;">
+                <p class="logo_text">Home Gateway</p>
+            </div>
+            <div style="margin-left:auto; margin-right:0;">
+                <a style="text-decoration: none; color:#777777;" href="#"><p class="lang">▶Türkçe</p></a>
             </div>
         </div>
 
@@ -51,3 +72,4 @@
 	
 </body>
 </html>
+

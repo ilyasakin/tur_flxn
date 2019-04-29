@@ -6,74 +6,102 @@
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Huawei Home Gateway</title>
     <style>
-    html {
-        height: 100%;
-        margin: 0px;
-    }
-
-    body {
-        background-color: #ebebeb;
-        height: 100%;
-        margin: 0px;
-    }
-    
-    .container {
-        margin-left: 20%;
-        margin-right: 20%;
+        html {
+            height: 100%;
+            margin: 0px;
+        }
         
-    }
-
-    .header {
-        background-color: white;
-        height: 60px;
-        max-height: 60px;
-        display: flex;
-        min-width: 500px;
-    }
-
-    .logo {
-        padding: 5px 0;
-        zoom: 80%;
-        margin: 0;
-        display: inline-block;
-    }
-
-    .logo_text {
-        margin-top: 15px;
-        margin-left: 8px;
-        font-weight: bold;
-    }
-
-    .lang {
-        margin-right: 10px;
-        margin-top: 20px;
-    }
-
-    .main {
-        margin-top: 20px;
-        background-color: white;
-        height: 600px;
-        border-radius: 8px;
-    }
-
-    .footer {
-        color:#777777;
-        width: 100%;
-        font-size: 10px;
-        margin-top:2px;
-    }
-
-    .footer-text {
-        display: inline;
-    }
-
-    .footer-link {
-        margin-left:10px;
-        display: inline;
-        text-decoration: none;
-        color: #777777;
-    }
-
+        body {
+            background-color: #ebebeb;
+            height: 100%;
+            margin: 0px;
+        }
+        
+        .container {
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        
+        .header {
+            background-color: white;
+            height: 60px;
+            max-height: 60px;
+            display: flex;
+            min-width: 500px;
+        }
+        
+        .logo {
+            padding: 5px 0;
+            zoom: 80%;
+            margin: 0;
+            display: inline-block;
+        }
+        
+        .logo_text {
+            margin-top: 15px;
+            margin-left: 8px;
+            font-weight: bold;
+        }
+        
+        .lang {
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+        
+        .main {
+            margin-top: 20px;
+            background-color: white;
+            height: 600px;
+            border-radius: 8px;
+        }
+        
+        .footer {
+            color: #777777;
+            width: 100%;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        
+        .footer-text {
+            display: inline;
+        }
+        
+        .footer-link {
+            margin-left: 10px;
+            display: inline;
+            text-decoration: none;
+            color: #777777;
+        }
+        
+        .navbar {
+            background: red;
+            height: 52px;
+            width: 100%;
+        }
+        
+        .navbar-button {
+            width: 150px;
+            height: 100%;
+            background-color: aqua;
+            display: inline-block;
+        }
+        
+        .navbar-button:hover {
+            background-color: blue;
+        }
+        
+        .navbar-button-maintain {
+            height: 100%;
+            float: right;
+            min-width: 150px;
+            margin-right: 0;
+            margin-left: auto;
+            background-color: aqua;
+        }
+        
+        .navbar-button-maintain:hover {
+            background-color: blue;
+        }
     </style>
 </head>
 
@@ -87,18 +115,50 @@
                 <p class="logo_text">Home Gateway</p>
             </div>
             <div style="margin-left:auto; margin-right:0;">
-                <a style="text-decoration: none; color:#777777;" href="#"><p class="lang">Türkçe ▶</p></a>
+                <a style="text-decoration: none; color:#777777;" href="#">
+                    <p class="lang">Türkçe ▶</p>
+                </a>
             </div>
+        </div>
+        <div class="navbar">
+            <!--HOME-->
+            <div class="navbar-button">
+
+            </div>
+            <!--INTERNET-->
+            <div class="navbar-button">
+
+            </div>
+            <!--HOME NETWORK-->
+            <div class="navbar-button">
+
+            </div>
+            <!--SHARE-->
+            <div class="navbar-button">
+
+            </div>
+            <!--TELEPHONY-->
+            <div class="navbar-button">
+
+            </div>
+            <!--MAINTAIN-->
+            <div class="navbar-button-maintain">
+                
+            </div>
+
         </div>
         <!--Header end-->
         <div class="main">
-            
+
         </div>
         <!--Main end-->
-        <div class="footer"><center><p class="footer-text">Copyright © Huavei Technologies Co., Ltd. 2012-2018. All rights reserved.</p><a href="#" class="footer-link">Privacy Policy</a><a href="#" class="footer-link">Open Source Software Declaration</a></center></div>
+        <div class="footer">
+            <center>
+                <p class="footer-text">Copyright © Huavei Technologies Co., Ltd. 2012-2018. All rights reserved.</p><a href="#" class="footer-link">Privacy Policy</a><a href="#" class="footer-link">Open Source Software Declaration</a></center>
+        </div>
 
     </div>
-	
-</body>
-</html>
 
+</body>
+
+</html>

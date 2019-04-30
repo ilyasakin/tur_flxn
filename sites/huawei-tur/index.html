@@ -15,6 +15,7 @@
             background-color: #ebebeb;
             height: 100%;
             margin: 0px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         }
         
         .container {
@@ -162,11 +163,35 @@
             position: absolute;
             width: 500px;
             height: 300px;
-            background-color: #ebebeb;
             left: 50%;
             transform: translate(-50%, 0);
             margin-top: 80px;
             border-radius: 8px;
+            overflow: hidden;
+            background-color: #F9F9FB;
+            border: solid;
+            border-width: 1px;
+            border-color: #DADADA;
+        }
+
+        .main-frame-line {
+            width: 100%;
+            height: 3px;
+            background-color: #9FCBF2;
+        }
+
+        .main-frame-text-login {
+            text-align: left;
+            color: #7F7F7F;
+            font-size: 18px;
+            margin-top: 20px;
+            padding-left: 5%;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
@@ -222,7 +247,10 @@
         <!--Header end-->
         <div class="main">
             <div class="main-top"></div>
-                <div class="main-frame"></div>
+                <div class="main-frame">
+                    <div class="main-frame-line"></div>
+                    <iframe src="info.html" width="440" height="265" align="center"></iframe>
+                </div>
         </div>
         <!--Main end-->
         <div class="footer">

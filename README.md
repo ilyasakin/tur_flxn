@@ -1,3 +1,4 @@
 # tur_flxn
-This files created for TESTING PURPOSES.
-It's illegal to use this files for illegal purposes.
+
+USE THESE FILES FOR TESTING AND TESTING ONLY!  
+I cannot shown responsible for actions you have done.

@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <title>Huawei Home Gateway</title>
-    <style>
+    <style>  
         html {
             height: 100%;
             margin: 0px;
@@ -77,13 +77,18 @@
             background: red;
             height: 52px;
             width: 100%;
+            display: block;
         }
         
         .navbar-button {
             width: 150px;
             height: 100%;
             background-color: aqua;
-            display: inline-block;
+            float: left;
+            margin-left:0px;
+            overflow: hidden;
+            text-decoration: none;
+            color:white;
         }
         
         .navbar-button:hover {
@@ -97,10 +102,16 @@
             margin-right: 0;
             margin-left: auto;
             background-color: aqua;
+            text-decoration: none;
+            color:white;
         }
         
         .navbar-button-maintain:hover {
             background-color: blue;
+        }
+
+        .navbar-button-link {
+            overflow: auto;            
         }
     </style>
 </head>
@@ -122,29 +133,29 @@
         </div>
         <div class="navbar">
             <!--HOME-->
-            <div class="navbar-button">
-
-            </div>
+            <a href="#" class="navbar-button"> 
+                    <p align="center" class="navbar-button-link">Home</p>
+            </a>
             <!--INTERNET-->
-            <div class="navbar-button">
-
-            </div>
+            <a href="#" class="navbar-button"> 
+                    <p align="center" class="navbar-button-link">Internet</p>
+            </a>
             <!--HOME NETWORK-->
-            <div class="navbar-button">
-
-            </div>
+            <a href="#" class="navbar-button"> 
+                    <p align="center" class="navbar-button-link">Home Network</p>
+            </a>
             <!--SHARE-->
-            <div class="navbar-button">
-
-            </div>
+            <a href="#" class="navbar-button"> 
+                    <p align="center" class="navbar-button-link">Share</p>
+            </a>
             <!--TELEPHONY-->
-            <div class="navbar-button">
-
-            </div>
+            <a href="#" class="navbar-button"> 
+                    <p align="center" class="navbar-button-link">Telephony</p>
+            </a>
             <!--MAINTAIN-->
-            <div class="navbar-button-maintain">
-                
-            </div>
+            <a href="#" class="navbar-button-maintain"> 
+                    <p align="center" class="navbar-button-link">Maintain</p>
+            </a>
 
         </div>
         <!--Header end-->
@@ -154,7 +165,8 @@
         <!--Main end-->
         <div class="footer">
             <center>
-                <p class="footer-text">Copyright © Huavei Technologies Co., Ltd. 2012-2018. All rights reserved.</p><a href="#" class="footer-link">Privacy Policy</a><a href="#" class="footer-link">Open Source Software Declaration</a></center>
+                <p class="footer-text">Copyright © Huavei Technologies Co., Ltd. 2012-2018. All rights reserved.</p><a href="#" class="footer-link">Privacy Policy</a><a href="#" class="footer-link">Open Source Software Declaration</a>
+            </center>
         </div>
 
     </div>

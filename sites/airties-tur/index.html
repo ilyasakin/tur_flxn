@@ -4,7 +4,10 @@
 <head>
     <title>AirTies</title>
     <style>
-        body {
+        html {
+			height: 100%;
+		}
+		body {
             margin: 0px;
         }
         
@@ -15,13 +18,43 @@
             height: 112px;
         }
 
+		.content {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+		.content-child {
+			margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+			height: 360px;
+			width: 360px;
+			border-width: 1px;
+			border-color: #CCCCCC;
+			border-style: solid;
+			margin-top: 100px;
+		}
+
+		iframe {
+			border: none;
+		}
+
     </style>
 </head>
 
 <body>
     <div class="header">
         <img src="images/airties_logo.gif">
-    </div>
+	</div>
+	<div class="content">
+		<div class="content-child">
+			<iframe src="info.html" width="359" height="359" align="center"></iframe>
+
+		</div>
+		
+	</div>
 
 </body>
 

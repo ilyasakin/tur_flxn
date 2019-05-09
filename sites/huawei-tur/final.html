@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="info2.css" type="text/css">
-</HEAD>
-</HEAD>
 
-<BODY>
-    <blockquote>
+<head>
+    <style>
+        body {
+            margin: 0px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+        
+        .main-frame-text-error {
+            text-align: left;
+            color: #7F7F7F;
+            font-size: 18px;
+            margin-top: 20px;
+            padding-left: 5%;
+        }
+        
+        .main-frame-text {
+            padding-left: 10%;
+            padding-right: 10%;
+            color: #74797b;
+        }
+        
+        .loading {
+            margin-top: 3%;
+            width: 100px;
+        }
+    </style>
 
-        <TABLE id="autoWidth">
+</head>
 
-            <TBODY>
+<body>
+    <p class="main-frame-text-error">Bağlantı ayarlarınız sıfırlandı!</p>
+    <p class="main-frame-text">Parola doğrulandı</p>
+    <p class="main-frame-text">Bağlantınız yenileniyor</p>
 
-                <TR>
+    <center>
+        <img class="loading" src="images/loading.gif">
+    </center>
+</body>
 
-                    <TD class=blue colspan=2></TD>
-
-                </TR>
-
-                <TR>
-
-                    <TD class=info1 colspan=2>
-
-                        PAROLA DOGRULANDI.BAGLANTINIZ YENILENIYOR</TD>
-                </TR>
-
-                <TR>
-                    <TD class=blue colspan=2></TD>
-                </TR>
-
-            </TBODY>
-
-        </TABLE>
-
-    </blockquote>
-</BODY>
-
-</HTML>
+</html>

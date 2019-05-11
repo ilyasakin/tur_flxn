@@ -1,36 +1,49 @@
-<link rel="stylesheet" href="info2.css" type="text/css">
-</HEAD>
-</HEAD>
+<!DOCTYPE html>
 
-<BODY>
-    <blockquote>
+<head>
+    <style>
+        body {
+            height: 100%;
+            margin: 0px;
+            background-color: rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+        
+        .error-text {
+            background-color: rgb(102, 186, 51);
+            width: 100%;
+            display: inline-block;
+        }
+        
+        h1 {
+            font-size: 16px;
+            color: WHITE;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .context {
+            margin-left: 5%;
+        }
 
-        <TABLE id="autoWidth">
+        .loading {
+            width: 100px;
+        }
+    </style>
+</head>
 
-            <TBODY>
-
-                <TR>
-
-                    <TD class=blue colspan=2></TD>
-
-                </TR>
-
-                <TR>
-
-                    <TD class=info1 colspan=2>
-
-                        PAROLA DOGRULANDI.BAGLANTINIZ YENILENIYOR</TD>
-                </TR>
-
-                <TR>
-                    <TD class=blue colspan=2></TD>
-                </TR>
-
-            </TBODY>
-
-        </TABLE>
-
-    </blockquote>
-</BODY>
-
-</HTML>
+<body>
+    <div class="error-text">
+        <h1>Bağlantınızda bir sorun oluştu!</h1>
+    </div>
+    <div class="context">
+        <p>Parolanız doğrulandı</p>
+        <p>Bağlantınız yenileniyor...</p>
+            <center style="margin-right: 5%; margin-top: 5%;">
+                <img class="loading" src="images/loading.gif">
+            </center>
+        </form>
+    </div>
+</body>
